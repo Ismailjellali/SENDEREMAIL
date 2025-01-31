@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoi d'Emails Planifiés</title>
+</head>
+<body>
+    <h1>Planifier un email</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="sender_email">Votre Email :</label><br>
+        <input type="email" id="sender_email" name="sender_email" required><br><br>
+        
+        <label for="app_password">Mot de passe d'application Gmail :</label><br>
+        <input type="password" id="app_password" name="app_password" required><br><br>
+
+        <label for="subject">Objet :</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+        
+        <label for="message">Message (HTML) :</label><br>
+        <textarea id="message" name="message" rows="10" required></textarea><br><br>
+        
+        <label for="email_list">Liste des destinataires (séparés par des virgules) :</label><br>
+        <textarea id="email_list" name="email_list" rows="5" required></textarea><br><br>
+        
+        <label for="attachments">Ajouter des pièces jointes :</label><br>
+        <input type="file" id="attachments" name="attachments" multiple><br><br>
+
+        <label for="schedule_time">Heure d'envoi (format HH:MM) :</label><br>
+        <input type="time" id="schedule_time" name="schedule_time" required><br><br>
+
+        <button type="submit">Planifier l'envoi</button>
+    </form>
+</body>
+</html>

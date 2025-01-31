@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+APScheduler
+Werkzeug
+bleach
+beautifulsoup4
+smtplib  # (this is part of Python's standard library, so no need to include it in requirements.txt)
+pandas
+SQLAlchemy
